@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validação de formulário</title>
+</head>
+<body>
+    <h1>Exemplo Validação de dados</h1>
+    <form action="/processar-formulario" method="post">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required placeholder="Digite o nome completo" minlength="3" maxlength="50"><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required placeholder="Digite um email válido"><br><br>
+
+        <label for="idade">Idade:</label>
+        <input type="number" id="idade" name="idade" min="18" max="120"><br><br>
+
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha" name="senha" required pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,12}$"
+            title="Senha deve conter no mínimo 8 e no máximo 12 caracteres, uma letra maiúscula, um número e um simbolo"><br><br>
+        <button type="submit">Enviar</button>
+    </form>
+    
+</body>
+</html>
