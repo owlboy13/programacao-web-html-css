@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Posicionamento CSS</title>
+    <link rel="stylesheet" href="posicionamento.css">
+</head>
+<body>
+    <h1>Técnicas de Posicionamento CSS</h1>
+
+    <div class="sticky-box">
+
+        Eu sou uma Caixa sticky! Role a página para me ver colar.
+
+    </div>
+
+    <p>Conteúdo antes do container posicionado.</p>
+
+    <div class="container-posicionado">
+        <h3>Container Posicionado (<code>position: relative</code></h3>
+
+        <p>Este container serve como referencia para o elemento absoluto</p>
+
+        <div class="box static-box">Static</div>
+
+        <div class="box absolute-box">Absolute</div>
+    </div>
+
+    <p style="margin-top: 50px;">
+        Role para baixo para ver a caixa "Fixed" no canto inferior direito e a caixa "Sticky" no topo.
+
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+        Mais conteúdo para forçar a rolagem.
+    </p>
+
+    <div class="box fixed-box">Fixed</div>
+</body>
+</html>

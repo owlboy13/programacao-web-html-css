@@ -1,0 +1,16 @@
+/* Importando módulos CSS */
+
+@import url('utils/_variables.css');
+@import url('components/_button.css');
+@import url('base/_reset.css');
+
+/* Demais módulos podem ser inseridos
+ assim que tiverem conteúdo */
+
+/* Estilos globais ou layout que 
+ não se encaixam em um componente específico */
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: var(--spacing-unit);
+}

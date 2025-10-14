@@ -1,0 +1,30 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 20px;
+    background-color: #f4f4f4;
+}
+
+.caixa-padrao {
+    width: 200px;
+    height: 150px;
+    background-color: lightblue;
+    border: 5px solid darkblue;
+    padding: 10px;
+    margin: 20px;
+    /*box-sizing: content-box; é o padrão */
+    box-sizing: content-box; /* Explicito para demonstração*/
+}
+
+.caixa-border-box {
+    width: 200px;
+    height: 150px;
+    background-color: lightgreen;
+    border: 5px solid darkgreen;
+    padding: 10px;
+    margin: 20px;
+    box-sizing: border-box; /*Inclui padding e borer na largura/altura */
+}
+
+p {
+    margin-bottom: 5px;
+}

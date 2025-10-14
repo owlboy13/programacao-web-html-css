@@ -1,0 +1,62 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 20px;
+    background-color: #f9f9f9;
+}
+
+.flex-container {
+    border: 2px solid #333;
+    padding: 10px;
+    margin-bottom: 20px;
+    min-height: 150px; /* Para visualizar o alinhamento */
+    background-color: #fff;
+}
+
+.flex-item {
+    background-color: #64B5F6;
+    color: white;
+    padding: 15px;
+    margin: 5px;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 5px;
+    box-sizing: border-box;
+    flex-grow: 0; /* Padrão */~
+    flex-shrink: 1; /* Padrão */
+    flex-basis: auto; /* Padrão */
+}
+
+/* Exemplos de Contêiner */
+.column-example {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 300px; /* Necessário para ver o justify-content em coluna */
+}
+
+.wrap-example {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os items quebrem a linha */
+    justify-content: center;
+    gap: 10px; /* Espaço entre os itens */
+}
+
+/* Exemplos de Itens Flex */
+.flex-item.grow {
+    flex-shrink: 2; /* faz com que este item encolha mais do que os outros */
+    flex-basis: 120px; /*Tamanho inicial maior */
+}
+
+.flex-item.order-last {
+    order: 1; /* Mover para o final */
+}
+
+.flex-item.align-self-end {
+    align-self: flex-end;
+}
+
+h2 {
+    margin-top: 30px;
+    color: #333;
+}

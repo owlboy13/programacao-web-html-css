@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #11114E;
+    margin: 20px;
+}
+
+h1 {
+    background-color: white;
+    color: black;
+    padding: 15px;
+    text-align: center;
+    padding: 5px;
+    border: 5px solid black;
+}
+
+p {
+    text-align: center;
+}
+
+.botao-transicao {
+    background-color: #ff0000;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transiciona cor e escala */
+}
+
+.botao-transicao:hover {
+    background-color: #840000;
+    transform: scale(1.05); /*Leve aumento de tamanho */
+}
+
+/* Animações */
+
+@keyframes girar {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}
+
+.spinner {
+    margin: auto;
+    border: 10px solid #f3f3f3;
+    border-top: 8px solid #3498db;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    animation: girar 1s linear infinite; /* Animação de rotação contínua*/
+}
+
+/* Media Query */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.item {
+    flex: 1 1 300px; /* Base de 300px, cresce e encolhe*/
+    background-color: #e0f2f7;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+}
+/* Aplica estilos quando a largura da tela for menor ou igual 
+a 768px (tablets e smatphones) */
+
+@media screen and (max-width: 480px) {
+    .item {
+        padding: 10px;
+        font-size: 0.9em;
+    }
+}
+
+
+
+

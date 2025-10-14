@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Box Model</title>
+    <link rel="stylesheet" href="boxmodel.css">
+</head>
+<body>
+
+    <h1>Entendendo o Box Model</h1>
+
+    <p>Caixa com <code>box-sizing: content-box</code> (padrão):</p>
+
+    <div class="caixa-padrao">
+        Conteúdo da caixa padrão.
+        Largura total (visual): 200 (conteúdo) + 2*10 (paddding) + 2*5 (borda) = 230px
+        Altura total (visual): 100 (conteúdo) + 2*10 (paddding) + 2*5 (borda) = 130px
+    </div>
+
+    <p>Caixa com <code>box-sizing: border-box</code>:</p>
+    <div class="caixa-border-box">
+        Conteúdo da caixa border-box.
+        Largura total (visual): 200px (já inclui padding e borda)
+        Altura total (visual): 100px (já inclui padding e borda)
+    </div>
+    
+    <p>Observe como a largura e altura declaradas se comportam de forma diferente em caixa-padrao em
+        cada caso, afetando o tamanho final do elemento na tela.
+    </p>
+</body>
+</html>

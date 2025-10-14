@@ -1,0 +1,44 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+
+}
+
+h1 {
+    color: white;
+    text-align: center;
+}
+
+.menu-desktop {
+    display: flex;
+    justify-content: space-around;
+    background-color: #333;
+    padding: 10px;
+}
+
+.menu-desktop a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 15px;
+}
+
+.menu-mobile {
+    display: none; /* Escondido por padrão */
+}
+
+/* Quando a tela for menor que 768px (mobile),
+escondemos o menu desktop e mostramos o mobile*/
+
+@media screen and (max-width: 768px){
+    .menu-desktop {
+        display: none;
+    }
+    .menu-mobile {
+        display: block;
+        background-color: #555;
+        padding: 10px;
+        text-align: center;
+        color: white;
+    }
+}
+
