@@ -1,0 +1,57 @@
+/* Estilização do Catálogo  */
+.catalogo-main {
+    padding: var(--spacing-large);
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Contêiner Flex principal para o catalogo */
+.product-grid {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os itens quebrem para a proxima linha */
+    gap: var(--spacing-medium); /* Espaçamento entre os itens*/
+    justify-content: flex-start; /* Alinha os itens ao inicio*/
+}
+
+/* Item do Produto (card)*/
+.product-card {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: var(--card-shadow);
+    padding-bottom: var(--spacing-small);
+    text-align: center;
+
+    /* Configuração Flexbox para responsividade*/
+    /* Garante que o item ocupe um minimo e se expanda*/
+    /* 1: grow | 1: shrink | 300px: base-width (desktop) */
+    flex: 0 0 calc(33.33% - var(--spacing-small));
+    max-width: 300px;
+}
+
+.product-card a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.product-image {
+    width: 90px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.product-info {
+    padding: var(--spacing-small) var(--spacing-medium);
+}
+
+.product-title {
+    font-size: 1.1rem;
+    margin: var(--spacing-small) 0;
+}
+
+.product-price {
+    color: var(--primary-color);
+    font-weight: bold;
+    margin-bottom: var(--spacing-medium);
+}

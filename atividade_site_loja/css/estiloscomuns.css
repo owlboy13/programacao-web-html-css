@@ -1,0 +1,68 @@
+/* Estilo Comuns e Componentes  */
+
+/* Cabeçalho */
+.main-header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: var(--spacing-medium) var(--spacing-large);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-header h1 {
+    color: white;
+}
+
+.main-header nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: var(--spacing-medium);
+    transition: color 0.3 ease;
+}
+
+.main-header nav a:hover {
+    color: var(--secondary-color);
+}
+
+/* Botões (com Transições) */
+.btn {
+    padding: var(--spacing-small) var(--spacing-medium);
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 4px;
+    /* Transição para feedback visual agradavel */
+    transition: background-color 0.3s ease, transform 0.1s, box-shadow 0.3s ease;
+}
+
+.btn-buy, .btn-add-cart {
+    background-color: var(--primary-color);
+    color: var(--light-bg);
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-buy, .btn-add-cart:hover {
+    background-color: #c87cff;
+    transform: scale(1.05);
+}
+
+.btn-buy:active, .btn-add-cart:active {
+    transform: translateY(0); /* Efeito de Clique */
+}
+
+.btn-favorite {
+    background-color:  var(--light-bg);
+    color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+}
+
+.btn-favorite:hover {
+    background-color: var(--primary-color);
+    color: white;
+}

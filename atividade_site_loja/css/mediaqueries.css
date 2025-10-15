@@ -1,0 +1,59 @@
+/* Media Queries (Design Responsivo) */
+
+/* Tablet (max-width: 1068px) */
+@media (max-width: 1068px) {
+    /* Catálogo: 2 colunas*/
+    .product-card {
+        /* Base width ajustada para acomodar 2 colunas + gap*/
+        flex: 1 1 calc(50% - var(--spacing-medium));
+    }
+
+    /* Detalhes: Menos espaçamento*/
+    .product-detail-container {
+        gap: var(--spacing-medium);
+    }
+}
+
+/* Mobile (max-width: 768px) */
+@media (max-width: 768px) {
+    /* Layout GHeral */
+    .main-header {
+        flex-direction: column;
+        text-align: center;
+        padding: var(--spacing-medium);
+    }
+    .main-header nav a {
+        margin: var(--spacing-small) 0.5rem;
+        display: inline-block;
+    }
+    .catalogo-main, .detalhes-main {
+        padding: var(--spacing-medium);
+    }
+
+    /* Catálogo: 1 coluna */
+    .product-card {
+        flex: 1 1 100%; /* Ocupa a largura total*/
+        max-width: none;
+    }
+
+    /* Detalhes: Layout de coluna (imagem em cima, info embaixo)*/
+    .product-detail-container {
+        flex-direction: column;
+    }
+
+    .product-image-wrapper {
+        flex: 0 0 100%;
+    }
+
+    /* Ajuste de fontes e espaçamentos para mobile */
+    .detail-title {
+        font-size: 1.5rem;
+    }
+    .detalhes-price {
+        font-size: 1.2rem;
+    }
+    .btn {
+        width: 100%;
+        margin-bottom: var(--spacing-small);
+    }
+}

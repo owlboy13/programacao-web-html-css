@@ -1,0 +1,60 @@
+/* Estilização da página detalhes */
+.detalhes-main {
+    padding: var(--spacing-large);
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Contêiner flex para os detalhes: imagem e info lado a lado*/
+.product-detail-container {
+    display: flex;
+    gap: var(--spacing-large);
+    align-items: flex-start;
+    background-color: white;
+    padding: var(--spacing-medium);
+    border-radius: 8px;
+    box-shadow: var(--card-shadow);
+}
+
+.product-image-wrapper {
+    /* Define largura no desktop*/
+    flex: 0 0 50%;
+    overflow: hidden;
+    border-radius: 6px;
+}
+
+.detail-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    /* Transição para zoom sutil ao passar o mouse*/
+    transition: transform 0.4s ease;
+}
+
+/* Animação para a imagem (Zoom ao hover) */
+.product-image-wrapper:hover {
+    transform: scale(1.05);
+}
+
+.product-details {
+    flex: 1; /* Ocupa o restante do espaço*/
+}
+
+.detail-title {
+    font-size: 2rem;
+    margin-top: 0;
+}
+
+.detail-price {
+    font-size: 1.5rem;
+    color: var(--secondary-color);
+    margin-bottom: var(--spacing-medium);
+}
+
+.description-block {
+    margin-bottom: var(--spacing-large);
+}
+
+.action-buttons button {
+    margin-right: var(--spacing-small);
+}
